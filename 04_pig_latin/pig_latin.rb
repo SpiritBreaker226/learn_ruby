@@ -1,5 +1,5 @@
 def translate(words)
-	
+	words.split(" ").map { |word| translate_word(word) }.join(" ")
 end
 
 def translate_word(text)
