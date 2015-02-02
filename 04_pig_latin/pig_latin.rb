@@ -4,14 +4,16 @@ end
 
 def translate_word(text)
 	vowel = ["a", "e", "i", "o", "u"]
-	pig_latin = ""
+	pig_latin = sounds_like_vowel(text)
 
-	text.each_char.with_index do |char, index| 
-		if vowel.include?(char) 
-			pig_latin = text[index...text.length] << pig_latin
-			break
-		else
-			pig_latin += char
+	if pig_latin.empty?
+		text.each_char.with_index do |char, index| 
+			if vowel.include?(char) 
+				pig_latin = text[index...text.length] << pig_latin
+				break
+			else
+				pig_latin += char
+			end
 		end
 	end
 
