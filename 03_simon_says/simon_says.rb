@@ -21,3 +21,15 @@ end
 def first_word(text)
 	text.split(" ").first
 end
+
+def titleize(text)
+	non_capitalize_words = ["and", "over", "the"]
+
+	capitalize_words = text.split(" ").map(&:capitalize)
+
+	capitalize_words.map!.with_index do |word, index|
+		non_capitalize_words.index(word.downcase) == nil || index == 0 ? word : word.downcase
+	end
+
+	capitalize_words.join(" ")
+end
