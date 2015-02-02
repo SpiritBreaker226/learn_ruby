@@ -9,3 +9,7 @@ end
 def sum(numbers)
 	numbers.empty? ? 0 : numbers.inject(&:+)
 end
+
+def multiplie(*numbers)
+	numbers.empty? ? 0 : numbers.inject(&:*)
+end
