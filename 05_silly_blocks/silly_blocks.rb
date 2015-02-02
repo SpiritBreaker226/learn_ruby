@@ -7,3 +7,7 @@ def adder(amount_add = 1)
 
 	num += amount_add
 end
+
+def repeater(number_time = 1)
+	number_time.times { num = yield }
+end
