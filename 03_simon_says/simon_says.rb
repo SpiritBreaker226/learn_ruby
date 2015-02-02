@@ -13,3 +13,7 @@ def repeat(text, num = 1)
 
 	return_text.strip
 end
+
+def start_of_word(text, num)
+	text[0...num]
+end
