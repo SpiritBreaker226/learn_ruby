@@ -1,4 +1,8 @@
-def translate(text)
+def translate(words)
+	
+end
+
+def translate_word(text)
 	vowel = ["a", "e", "i", "o", "u"]
 	pig_latin = ""
 
