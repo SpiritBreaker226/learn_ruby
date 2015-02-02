@@ -1,4 +1,12 @@
 class Book
+	def title
+		@title
+	end
+
+	def title=(title)
+		@title = titleize(title)
+	end
+
 	def titleize(text)
 		non_capitalize_words = ["and", "over", "the", "a", "an", "in", "of"]
 
