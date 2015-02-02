@@ -17,3 +17,7 @@ end
 def start_of_word(text, num)
 	text[0...num]
 end
+
+def first_word(text)
+	text.split(" ").first
+end
