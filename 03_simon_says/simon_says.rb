@@ -1,15 +1,15 @@
-def echo(say_something)
-	say_something
+def echo(text)
+	text
 end
 
-def shout(say_something)
-	say_something.upcase
+def shout(text)
+	text.upcase
 end
 
-def repeat(say_something, num = 1)
-	return_text = num == 1 ? say_something : ""
+def repeat(text, num = 1)
+	return_text = num == 1 ? text : ""
 
-	num.times { return_text += " #{say_something}" }
+	num.times { return_text += " #{text}" }
 
 	return_text.strip
 end
