@@ -17,3 +17,17 @@ def translate_word(text)
 
 	"#{pig_latin}ay"
 end
+
+def sounds_like_vowel(word)
+	sounds_like_vowel = ["qu", "squ"]
+	pig_latin = ""
+
+	sounds_like_vowel.each do |vowel| 
+		if word.index(vowel) == 0
+			pig_latin = word[(vowel.length)...(word.length)] << vowel
+			break
+		end
+	end
+
+	word == pig_latin ? "" : pig_latin 
+end
