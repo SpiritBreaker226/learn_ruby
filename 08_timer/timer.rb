@@ -5,7 +5,7 @@ class Timer
 		@seconds = seconds
 	end
 	
-	def padding(number_pad)
+	def padded(number_pad)
 		number_pad <= 9 ? "0#{number_pad}" : number_pad.to_s
 	end
 
