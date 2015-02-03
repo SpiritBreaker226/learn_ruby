@@ -6,4 +6,8 @@ class Array
 	def square
 		self.map { |index| index * index }
 	end
+
+	def square!
+		self.map! { |index| index * index }
+	end
 end
