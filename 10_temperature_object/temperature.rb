@@ -20,3 +20,9 @@ class Temperature
 			@fahrenheit == nil ? @celsius : (@fahrenheit - 32) * 5/9
 	end
 end
+
+class Celsius < Temperature
+	def initialize(celsius)
+		@celsius = celsius
+	end	
+end
