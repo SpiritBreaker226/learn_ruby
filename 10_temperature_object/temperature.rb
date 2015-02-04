@@ -26,3 +26,9 @@ class Celsius < Temperature
 		@celsius = celsius
 	end	
 end
+
+class Fahrenheit < Temperature
+	def initialize(fahrenheit)
+		@fahrenheit = fahrenheit
+	end	
+end
