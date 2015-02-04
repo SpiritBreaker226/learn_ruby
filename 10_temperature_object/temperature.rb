@@ -1,4 +1,8 @@
 class Temperature
+	def self.in_celsius(celsius)
+		self.new({c: celsius})
+	end
+
 	def initialize(optional = {})
 		@fahrenheit = optional[:f]
 		@celsius = optional[:c]
