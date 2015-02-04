@@ -1,4 +1,8 @@
 class Temperature
+	def self.in_fahrenheit(fahrenheit)
+		self.new({f: fahrenheit})
+	end
+
 	def self.in_celsius(celsius)
 		self.new({c: celsius})
 	end
